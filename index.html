@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -266,25 +266,28 @@
                                 <h4 class="heading-3">MOBILE APPS ANDROID CONNECT FIREBASE FOR IOT</h4>
                                 <p>Aplikasi ini terhubung dengan Firebase untuk mengendalikan Robot Arm 6 DOF berbasis
                                     IoT. Pada aplikasi disediakan enam sidebar yang masing-masing berfungsi untuk
-                                    mengatur pergerakan setiap derajat kebebasan (DOF) robot. Selain itu, tersedia fitur
-                                    Record dan Play yang memungkinkan pengguna merekam gerakan robot secara langsung,
-                                    kemudian memutar ulang gerakan tersebut agar robot dapat bergerak secara otomatis
-                                    sesuai dengan pergerakan yang telah direkam.</p>
+                                    mengatur pergerakan setiap derajat kebebasan (DOF) robot.</p>
+                                <p>Selain itu, tersedia fitur Record dan Play yang memungkinkan pengguna merekam gerakan
+                                    robot secara langsung, kemudian memutar ulang gerakan tersebut agar robot dapat
+                                    bergerak secara otomatis sesuai dengan pergerakan yang telah direkam.</p>
                                 <!-- <a href="#">READ MORE</a> -->
                             </div>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="400">
                         <div class="card">
-                            <img src="./src/img/ARM6DOF.png" alt="">
+                            <img src="./src/img/rcCAR.jpg" alt="">
                             <div class="card-padding">
-                                <h4 class="heading-3">MOBILE APPS ANDROID CONNECT FIREBASE FOR IOT</h4>
-                                <p>Aplikasi ini terhubung dengan Firebase untuk mengendalikan Robot Arm 6 DOF berbasis
-                                    IoT. Pada aplikasi disediakan enam sidebar yang masing-masing berfungsi untuk
-                                    mengatur pergerakan setiap derajat kebebasan (DOF) robot. Selain itu, tersedia fitur
-                                    Record dan Play yang memungkinkan pengguna merekam gerakan robot secara langsung,
-                                    kemudian memutar ulang gerakan tersebut agar robot dapat bergerak secara otomatis
-                                    sesuai dengan pergerakan yang telah direkam.</p>
+                                <h4 class="heading-3">RC CAR 4WD WITH BLUETOOTH CONTROL & CAMERA STREAMING USING
+                                    ESP32-CAM AI THINKER</h4>
+                                <p>Proyek ini adalah RC Car 4WD yang dikendalikan menggunakan aplikasi remote berbasis
+                                    Bluetooth pada smartphone. Kendali utama mobil dilakukan melalui koneksi Bluetooth,
+                                    sehingga pengguna dapat dengan mudah mengatur arah dan kecepatan mobil menggunakan
+                                    aplikasi Android.</p>
+                                <p>Selain itu, mobil dilengkapi dengan ESP32-CAM AI Thinker sebagai kamera utama yang
+                                    mampu melakukan video streaming melalui web server. Dengan fitur ini, pengguna dapat
+                                    memantau secara real-time tampilan dari kamera langsung melalui browser, tanpa perlu
+                                    aplikasi tambahan.</p>
                                 <!-- <a href="#">READ MORE</a> -->
                             </div>
                         </div>
@@ -298,21 +301,23 @@
         <section id="contact" class="full-height">
             <div class="container">
                 <div class="intro">
-                    <h6 class="heading-3 text-brand" data-aos="fade-up">GET IN TOUCH AND LET'S CREATE SOMETHING AMAZING!
+                    <h6 class="heading-3 text-brand" data-aos="fade-up">
+                        GET IN TOUCH AND LET'S CREATE SOMETHING AMAZING!
                     </h6>
                     <h2 class="heading-2" data-aos="fade-up" data-aos-delay="100">LET'S TALK NOW</h2>
                 </div>
-                <form action="mailto:aryaabdulmughni18@gmail.com" class="form" data-aos="fade-up" data-aos-delay="300">
-                    <input type="text" required="required" class="form-control" placeholder="Enter name">
-                    <input type="email" required="required" class="form-control" placeholder="Enter email">
-                    <input type="text" required="required" class="form-control" placeholder="Enter subject">
-                    <textarea class="form-control" required="required" rows="6" placeholder="Enter message"></textarea>
+
+                <!-- Contact Form -->
+                <form id="contact-form" class="form" data-aos="fade-up" data-aos-delay="300">
+                    <input type="text" name="name" required class="form-control" placeholder="Enter name">
+                    <input type="email" name="email" required class="form-control" placeholder="Enter email">
+                    <input type="text" name="subject" required class="form-control" placeholder="Enter subject">
+                    <textarea class="form-control" name="message" required rows="6" placeholder="Enter message"></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </section>
         <!-- //CONTACT -->
-
         <!-- FOOTER -->
         <footer>
             <div class="container">
@@ -332,9 +337,11 @@
 
     </main>
     <!-- // Main wrapper end -->
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./src/js/app.js"></script>
+    <script src="src/js/contact.js"></script>
 </body>
 
 </html>
